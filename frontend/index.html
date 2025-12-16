@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Chat</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg"></div>
+
+  <main class="wrap">
+    <header class="header">
+      <div class="badge">Jaya Prakash Narayana Raavi</div>
+      <h1>Ask about my experience</h1>
+      <p class="sub">
+        Skills • Projects • Work history • Tools 
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="chat">
+        <div class="msg bot">
+          <div class="avatar">R</div>
+          <div class="bubble">
+            <div class="title">Hi! 👋</div>
+            <div class="text">
+              Ask me anything. Try:
+              <ul>
+                <li>What are the main skills?</li>
+                <li>Summarize the most recent role</li>
+                <li>What projects stand out?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="thread"></div>
+
+        <div id="typing" class="typing hidden">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="inputRow">
+        <input id="q" type="text" placeholder="Type your question…" autocomplete="off"/>
+        <button id="askBtn" class="btn" type="button">Ask</button>
+      </div>
+
+      <div class="foot">
+        <span id="statusDot" class="dot"></span>
+        <span id="statusText">Connected</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
