@@ -1,5 +1,6 @@
 // Netlify will replace this at build time
-const API_BASE = '__API_BASE__';
+const API_BASE = "https://resumeragbot.onrender.com";
+
 
 const qInput = document.getElementById("q");
 const askBtn = document.getElementById("askBtn");
